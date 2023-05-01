@@ -9,9 +9,11 @@ import { Stage2Component } from './components/stages/stage2/stage2.component';
 import { Ppe1Component } from './components/ppes/ppe1/ppe1.component';
 import { Ppe2Component } from './components/ppes/ppe2/ppe2.component';
 import { VeilleComponent } from './components/veille/veille.component';
-import { DocComponent } from './components/doc/doc.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjetsComponent } from './components/projets/projets.component';
+import { TableauComponent } from './components/tableau/tableau.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { ProjetsComponent } from './components/projets/projets.component';
     Ppe1Component,
     Ppe2Component,
     VeilleComponent,
-    DocComponent,
     ContactComponent,
-    ProjetsComponent
+    ProjetsComponent,
+    TableauComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
